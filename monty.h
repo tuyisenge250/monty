@@ -1,5 +1,12 @@
 #ifndef MONTY_H
 #define MANTY_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -45,4 +52,8 @@ typedef struct bus_s
 	int lifi;
 } bus_t
 extern bus_t bus;
+oid addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+void b_push(stack_t **head, unsigned int number);
+void u_pall(stack_t **head, unsigned int number);
 #endif
