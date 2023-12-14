@@ -66,4 +66,5 @@ void b_pint(stack_t **head, unsigned int counter);
 void f_pop(stack_t **head, unsigned int counter);
 char  *clean_line(char *content);
 void f_swap(stack_t **head, unsigned int counter);
+void f_add(stack_t **head, unsigned int counter);
 #endif
