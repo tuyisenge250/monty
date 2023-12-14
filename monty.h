@@ -62,5 +62,7 @@ void f_queue(stack_t **head, unsigned int counter);
 ssize_t getstdin(char **lineptr, int file);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
-
+void b_pint(stack_t **head, unsigned int counter);
+void f_pop(stack_t **head, unsigned int counter);
+char  *clean_line(char *content);
 #endif
