@@ -14,7 +14,7 @@ void u_pall(stack_t **head, unsigned int counte)
 	h = *head;
 	if (h == NULL)
 		return;
-	while(n)
+	while(h)
 	{
 		printf("%d\n", h->n);
 		h = h->next;

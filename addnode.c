@@ -1,4 +1,4 @@
-#include "monty"
+#include "monty.h"
 /**
  * adddnode - add node to head stack
  * @head: head of stack
@@ -11,7 +11,7 @@ void addnode(stack_t **head, int n)
         
         aux = *head;
         newnode = malloc(sizeof(stack_t));
-	if(newnodde == NULL)
+	if(newnode == NULL)
 	{
 		printf("error\n");
 		exit(0);

@@ -50,10 +50,17 @@ typedef struct bus_s
 	FILE *file;
 	char *content;
 	int lifi;
-} bus_t
+} bus_t;
 extern bus_t bus;
-oid addnode(stack_t **head, int n);
+void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
-void b_push(stack_t **head, unsigned int number);
+void f_push(stack_t **head, unsigned int number);
 void u_pall(stack_t **head, unsigned int number);
+void free_stack(stack_t *head);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+void f_queue(stack_t **head, unsigned int counter);
+ssize_t getstdin(char **lineptr, int file);
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+
 #endif
